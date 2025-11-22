@@ -3,45 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Markdown to PDF Converter</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 30px;
-            max-width: 800px;
-            margin: auto;
-        }
-        textarea {
-            width: 100%;
-            height: 300px;
-            padding: 10px;
-            font-size: 16px;
-            font-family: monospace;
-        }
-        button {
-            padding: 12px 25px;
-            background: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin-top: 15px;
-            font-size: 16px;
-            border-radius: 4px;
-        }
-        button:hover {
-            background: #005fcc;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
     <h1>Markdown to PDF</h1>
     <p>Write Markdown below and download as PDF:</p>
 
-    <form action="/convert" method="POST">
-        <textarea name="markdown" placeholder="# Hello World"></textarea>
+    <form method="POST" id="markdown-form">
+        <textarea name="markdown" placeholder="# Hello World" id="markdown-input"></textarea>
         <br>
-        <button type="submit">Download PDF</button>
+        <button type="submit">Convert to PDF</button>
     </form>
+
+
+    <iframe id="pdfViewer" width="100%" height="500px"></iframe>
+    <button id="download-btn">Download</button>
+
+    <script src="/script.js"></script>
 
 </body>
 </html>

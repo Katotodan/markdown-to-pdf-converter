@@ -13,6 +13,9 @@ const __dirname = dirname(__filename);
 
 
 // Middleware
+// Serve static files from the 'public' directory
+app.use(express.static('public'));
+
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 app.use(express.text({ limit: "10mb" }));
@@ -57,7 +60,7 @@ app.post("/convert", async (req, res) => {
         // Set response headers for download
         res.set({
             "Content-Type": "application/pdf",
-            "Content-Disposition": "attachment; filename=markdown.pdf",
+            // "Content-Disposition": "attachment; filename=markdown.pdf",
             "Content-Length": pdfBuffer.length,
         });
 
