@@ -83,7 +83,7 @@ Notes for Docker:
 - Add more tests .
 - Add a small CI workflow (GitHub Actions) to run tests on push.
 
-**Auther**
+**Author**
 
 APIPAWE KATOTO Daniel
 
