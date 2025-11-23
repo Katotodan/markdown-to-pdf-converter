@@ -17,10 +17,28 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    margin-top: 15px;
+    margin: 15px 0;
     font-size: 16px;
     border-radius: 4px;
 }
 button:hover {
     background: #005fcc;
+}
+#pdfViewer, #download-btn, .loader, #preview{
+    display: none;
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #005fcc; /* Blue */
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
