@@ -1,8 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
-    padding: 30px;
-    max-width: 800px;
+    padding: 2rem 1rem;
     margin: auto;
+    min-height: 100dvh;
+    height: auto;
+    background-color: #eee;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+p{
+    margin-bottom: 1rem;
+    font-size: 18px;
+    color: #333;
+}
+form {
+    margin-bottom: 1rem;
 }
 textarea {
     width: 100%;
@@ -36,9 +55,21 @@ button:hover {
   width: 90px;
   height: 90px;
   animation: spin 2s linear infinite;
+  margin: 0 auto;
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+#error-displayer{
+    font-size: 20px;
+    color: red;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        max-width: 800px;
+    }
 }
