@@ -38,7 +38,9 @@ npm start
 
 **Tests**
 
-No test suite is included in this repository. Jest (or any other test runner) is not used currently, in other to make this repo simple for reviewer.
+```bash
+npm test
+```
 
 **How the app serves static files**
 
