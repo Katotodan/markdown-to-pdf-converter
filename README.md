@@ -3,12 +3,13 @@
 A small Express app that converts Markdown into a downloadable PDF.
 
 **Contents**
+
 - `server.js` — Express server and routes (Converter logic)
 - `public/` — static assets (client JS, CSS)
 - `views/` — EJS templates
 
-
 **Prerequisites**
+
 - Node.js (v16+ recommended)
 - npm
 - Internet access to install dependencies (Puppeteer will download a Chromium build)
@@ -69,6 +70,7 @@ Quick commands to build and run the container locally:
 ```
 
 Notes for Docker:
+
 - The container must include the Chromium binary and required system libraries. The project's `README.Docker.md` contains a recommended Dockerfile and tips for headless Chromium.
 - Puppeteer inside Docker still benefits from the `--no-sandbox` and `--disable-setuid-sandbox` flags.
 
@@ -86,7 +88,6 @@ Notes for Docker:
 **Author**
 
 APIPAWE KATOTO Daniel
-
 
 **License**
 

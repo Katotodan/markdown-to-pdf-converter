@@ -1,4 +1,4 @@
-const pdfMock = Buffer.from("fake-pdf-content");
+const pdfMock = Buffer.from('fake-pdf-content');
 
 const pageMock = {
   setContent: jest.fn(),
